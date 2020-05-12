@@ -13,16 +13,16 @@ app.get("/",function(req,res){
 app.get("/results",function(req,res){
 	
 	var movie = req.query.movie;
-	//console.log(movie);
+
 	if(movie == undefined){
-		//console.log("fuckk");
+		
 		movie="";
 	}
 	var url = "http://www.omdbapi.com/?type=movie&s=" + movie + "&apikey=thewdb";
 	request(url,function(error,response,body){
 		if(!error && response.statusCode == 200){
 			var data = JSON.parse(body);
-			//res.send(results.Search[0].Title);
+			
 			 res.render("results",{data: data});
 		}
 	})

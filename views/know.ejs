@@ -1,0 +1,51 @@
+<%- include("partials/header") %>
+
+
+<div class="container mt-5 detail-container">
+	<div class="row">
+		<div class= "col-md-4 mr-0 my-4 pr-0">
+			<img class="img-fluid" src = "<%= data.Poster %>">
+		</div>
+		<div class= "col-md-7 pl-0 my-4">
+			<h1> <%= data.Title %></h1>
+			<div class="card movie-detail mt-4" style="width: 45rem;">
+				
+				<ul class="list-group text-secondary">
+					<li class="list-group-item "><strong>Genre: </strong><%= data.Genre %></li>
+					<li class="list-group-item"><strong>Released: </strong> <%= data.Released %></li>
+					<li class="list-group-item"><strong>Rated: </strong> <%= data.Rated %></li>
+					<li class="list-group-item"><strong>IMDB Rating: </strong> <%= data.imdbRating %></li>
+					<li class="list-group-item"><strong>Director: </strong> <%= data.Director %></li>
+					<li class="list-group-item"><strong>Writer: </strong> <%= data.Writer %></li>
+					<li class="list-group-item"><strong>Actors: </strong> <%= data.Actors %></li>
+			  	</ul>
+			</div>
+			
+			
+			
+		</div>
+	</div>
+	<div class = "row mt-2">
+		<div class= "col">
+			<div class="card mb-3 plot" >
+				<h3 class="card-header text-white  pb-0">Plot</h3>
+		  		<div class="card-body">
+			<!-- <h5 class="card-title">Dark card title</h5> -->
+					<p class="card-text"> <%= data.Plot %></p>
+		  		</div>
+			</div>
+		
+		</div>
+	</div>
+	
+	<!-- <div class ="mr-3 pr-4"> -->
+		<a href="https://www.imdb.com/title/<%=data.imdbID%>/" class="btn btn-info ml-3 mb-5 mr-1">View on IMDB</a>
+	<a href="/results" class="btn btn-dark mb-5">Back to Search</a>
+	<!-- </div>
+	 -->
+	
+</div>
+
+
+
+

@@ -1,0 +1,47 @@
+body{
+	background : black;
+	color : white;
+	box-sizing:border-box;
+}
+
+.navbar{
+	padding-left : 80px;
+}
+.active-cyan-4 input[type=text]:focus:not([readonly]) {
+  border: 2px solid #4dd0e1;
+  box-shadow: 0 0 0 1px #4dd0e1;
+}
+
+.movies-list, .movies-list-content{
+	background : black;
+	color:white;
+	width:14rem;
+	border: none;
+	
+}
+.detail-container{
+	background : #191919;
+}
+
+.list-group-item{
+	background : #050505;
+	color: #808080;
+}
+.movie-detail {
+	background : black;
+}
+/* .card-body{
+	background :black;
+} */
+.plot{
+	background:#191919;
+	color: #808080;
+}
+h4{
+	display:inline;
+}
+
+#list{
+	/* width: 50%; */
+	margin: 25px 10px;
+}
